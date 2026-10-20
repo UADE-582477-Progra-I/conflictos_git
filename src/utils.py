@@ -1,12 +1,12 @@
-import re 
+import re
 
 def validar_id_usuario(id_usuario:str):
     """
     Valida que id_usuarios sea convertible a int
     Retorna True:False
     """
-    # Completar
-    return True
+    patron_id = r"[1-9][0-9]*"
+    return bool(re.fullmatch(patron_id, id_usuario))
 
 def validar_nombre(nombre:str):
     patron_nombre = r"[a-zA-Záéíóú ]*\d*"
