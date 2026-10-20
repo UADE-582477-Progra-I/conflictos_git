@@ -9,6 +9,7 @@ def validar_id_usuario(id_usuario:str):
     return bool(re.fullmatch(patron_id, id_usuario))
 
 def validar_nombre(nombre:str):
+    # Comentario patricio
     patron_nombre = r"[a-zA-Záéíóú ]*\d*"
     if not nombre or not nombre.strip():
         return False
